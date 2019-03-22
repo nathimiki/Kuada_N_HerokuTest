@@ -2,6 +2,7 @@ body{
     color: $text-color;
     font-size: 14px;
     font-family: $font-text;
+    background-color: $bg-color;
 }
 
 a{
@@ -12,10 +13,6 @@ a{
 
 h1{
     font-family: $font-title;
-}
-
-a:hover{
-    color: $hover-color;
 }
 
 #homeContainer{
@@ -43,7 +40,7 @@ a:hover{
 }
 
 #text p{
-  font-size: calc(14px + (14 - 10) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(18px + (14 - 10) * ((100vw - 300px) / (1600 - 300)));
 }
 
 #text h1{
@@ -69,13 +66,22 @@ a:hover{
 
 .flavors h1{
   font-size: calc(22px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+  padding-top: 5%;
 }
 
 .flavors p{
-  font-size: calc(14px + (14 - 10) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(16px + (14 - 10) * ((100vw - 300px) / (1600 - 300)));
+  text-align: justify;  
+  padding: 2%;
 }
 
 #prod p{
-  font-size: calc(14px + (14 - 10) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(18px + (14 - 10) * ((100vw - 300px) / (1600 - 300)));
+  padding: 5%;
 }
 
+@media screen and (max-width: 1000px){
+  #prod p{
+    padding: 1%;
+  }
+}
